@@ -236,11 +236,11 @@ export default function EventManagementWebsite() {
               Showcase your past setups and event themes here.
             </h2>
             <p className="mt-4 max-w-2xl text-slate-600">
-              Replace these placeholders with real photos once you have 3–6 event setups. Real imagery will do more for conversion than any amount of text.
+              
             </p>
           </div>
           <div className="hidden text-sm text-slate-500 md:block">
-            Replace placeholders with actual event photos
+           
           </div>
         </div>
 
