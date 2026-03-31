@@ -1,78 +1,79 @@
 export default function EventManagementWebsite() {
   const services = [
     {
-      title: "Birthdays",
+      title: "Birthday Celebrations",
       description:
-        "Thoughtful planning, décor styling, games, and smooth coordination for intimate to medium-sized birthday celebrations.",
+        "Styled setups, balloon arrangements, backdrop design, table décor, and on-site setup for memorable birthdays.",
     },
     {
       title: "Baby Showers",
       description:
-        "Warm, elegant setups with themed decorations, activity planning, styling, and guest experience support.",
+        "Elegant, warm, photo-ready setups with thoughtful styling for intimate baby showers and family gatherings.",
     },
     {
       title: "Gender Reveals",
       description:
-        "Beautiful reveal concepts, décor arrangements, prop setup, and stress-free execution for memorable family moments.",
+        "Beautiful reveal styling, décor concepts, props, and setup support to create a polished and joyful moment.",
     },
     {
-      title: "Private Functions",
+      title: "Private Events",
       description:
-        "Home-based and venue-based support for small to medium events including setup, styling, coordination, and hosting flow.",
+        "Décor and styling for small to medium celebrations at home or venues, tailored to your theme and budget.",
     },
   ];
 
   const highlights = [
-    "Personalised event styling",
-    "Small to medium functions",
-    "Home-based, flexible service",
-    "Décor, games, setup and coordination",
-    "Warm, family-focused approach",
-    "Affordable custom packages",
-  ];
-
-  const gallery = [
-    "Birthday Theme Setup",
-    "Elegant Baby Shower",
-    "Gender Reveal Backdrop",
-    "Private Home Function",
-    "Kids Party Activities",
-    "Table Styling & Décor",
+    "Styled for intimate events",
+    "Auckland-based service",
+    "Custom themes and décor",
+    "Simple booking process",
+    "Warm, premium presentation",
+    "Setup support included",
   ];
 
   const packages = [
     {
-      name: "Starter",
-      price: "From $199",
-      items: ["Basic décor styling", "Theme coordination", "Setup support"],
-    },
-    {
-      name: "Classic",
-      price: "From $399",
-      items: ["Decor + games setup", "Backdrop styling", "Event coordination"],
-    },
-    {
-      name: "Premium",
+      name: "Signature Setup",
       price: "Custom Quote",
-      items: ["End-to-end planning", "Full styling concept", "On-day support"],
+      items: [
+        "Backdrop and balloon styling",
+        "Theme-led décor setup",
+        "Ideal for birthdays and baby showers",
+      ],
+    },
+    {
+      name: "Celebration Styling",
+      price: "Custom Quote",
+      items: [
+        "Elevated table and space styling",
+        "Colour-matched décor concept",
+        "Suitable for home and venue events",
+      ],
+    },
+    {
+      name: "Full Event Look",
+      price: "Custom Quote",
+      items: [
+        "More complete event visual setup",
+        "Larger celebration presentation",
+        "Best for premium family occasions",
+      ],
     },
   ];
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b border-rose-100 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div>
-            <div className="text-xl font-semibold tracking-tight">Hire a Party</div>
-            <div className="text-sm text-slate-500">
-              Small celebrations, beautifully managed
-            </div>
+            <div className="text-2xl font-semibold tracking-tight text-slate-900">Hire a Party</div>
+            <div className="text-sm text-slate-500">Premium styling for beautiful celebrations</div>
           </div>
           <nav className="hidden gap-6 text-sm md:flex">
             <a href="#services" className="hover:text-slate-950">Services</a>
+            <a href="#gallery" className="hover:text-slate-950">Gallery</a>
             <a href="#packages" className="hover:text-slate-950">Packages</a>
             <a href="#about" className="hover:text-slate-950">About</a>
-            <a href="#gallery" className="hover:text-slate-950">Gallery</a>
             <a href="#contact" className="hover:text-slate-950">Contact</a>
           </nav>
         </div>
@@ -80,60 +81,63 @@ export default function EventManagementWebsite() {
 
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-rose-50 via-white to-amber-50" />
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center md:py-28">
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center md:py-28">
           <div>
             <div className="mb-4 inline-flex rounded-full border border-rose-200 bg-white px-4 py-2 text-sm text-slate-600 shadow-sm">
-              Boutique event planning for family celebrations in Auckland
+              Auckland event styling for birthdays, baby showers and private celebrations
             </div>
             <h1 className="max-w-2xl text-4xl font-semibold tracking-tight text-slate-900 md:text-6xl">
-              Beautiful, stress-free events for life’s special moments.
+              Beautiful event styling that makes your celebration feel special.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Hire a Party helps plan and style birthdays, baby showers, gender reveals, and private celebrations with a personal touch. From décor and games to setup and coordination, we make your event feel effortless.
+              Hire a Party creates polished, photo-ready setups for intimate and mid-size celebrations. From balloons and backdrops to décor styling and full setup, we make your event look elevated without making the process difficult.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href="https://wa.me/64212934999"
+                href="https://wa.me/64212934999?text=Hi%20Hire%20a%20Party%2C%20I%E2%80%99d%20like%20to%20enquire%20about%20an%20event."
                 className="rounded-2xl bg-slate-900 px-6 py-3 text-sm font-medium text-white shadow-lg transition hover:-translate-y-0.5"
               >
                 Enquire on WhatsApp
               </a>
               <a
-                href="#services"
+                href="#gallery"
                 className="rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-800 transition hover:border-slate-900"
               >
-                View Services
+                View Our Work
               </a>
+            </div>
+            <div className="mt-6 text-sm text-slate-500">
+              Fastest way to book: send your event date, location and theme idea on WhatsApp.
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div className="rounded-3xl bg-white p-6 shadow-xl ring-1 ring-slate-200">
-              <div className="mb-3 text-sm font-medium text-rose-500">What we do</div>
-              <div className="text-2xl font-semibold">Planning + Styling</div>
+              <div className="mb-3 text-sm font-medium text-rose-500">What clients want</div>
+              <div className="text-2xl font-semibold">A polished setup</div>
               <p className="mt-3 text-sm leading-6 text-slate-600">
-                End-to-end support for intimate celebrations that still feel elevated and memorable.
+                Décor that feels considered, premium and photo-ready without the stress of doing it yourself.
               </p>
             </div>
             <div className="mt-10 rounded-3xl bg-slate-900 p-6 text-white shadow-xl">
-              <div className="mb-3 text-sm font-medium text-rose-200">Ideal for</div>
-              <div className="text-2xl font-semibold">Home & Venue Events</div>
+              <div className="mb-3 text-sm font-medium text-rose-200">Best for</div>
+              <div className="text-2xl font-semibold">Home & venue celebrations</div>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Flexible services for small to medium functions with practical, hands-on coordination.
+                Flexible setups for family celebrations, intimate events and stylish milestone moments.
               </p>
             </div>
             <div className="rounded-3xl bg-rose-50 p-6 shadow-lg ring-1 ring-rose-100">
-              <div className="mb-3 text-sm font-medium text-rose-500">Style</div>
-              <div className="text-2xl font-semibold">Warm & Personal</div>
+              <div className="mb-3 text-sm font-medium text-rose-500">Approach</div>
+              <div className="text-2xl font-semibold">Custom, not generic</div>
               <p className="mt-3 text-sm leading-6 text-slate-600">
-                Designed for families who want professional help without the feel of a big agency.
+                We tailor the colour palette, look and décor details to suit your event rather than forcing a standard package.
               </p>
             </div>
             <div className="mt-10 rounded-3xl bg-amber-50 p-6 shadow-lg ring-1 ring-amber-100">
-              <div className="mb-3 text-sm font-medium text-amber-600">Easy start</div>
-              <div className="text-2xl font-semibold">Custom Packages</div>
+              <div className="mb-3 text-sm font-medium text-amber-600">Booking</div>
+              <div className="text-2xl font-semibold">Simple enquiry flow</div>
               <p className="mt-3 text-sm leading-6 text-slate-600">
-                Share your event type, guest count, and theme idea — we’ll tailor a package around it.
+                Share your date, guest count, budget and inspiration images — we’ll come back with a recommended setup.
               </p>
             </div>
           </div>
@@ -157,10 +161,10 @@ export default function EventManagementWebsite() {
         <div className="max-w-2xl">
           <div className="text-sm font-semibold uppercase tracking-[0.18em] text-rose-500">Services</div>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
-            Event support designed for meaningful celebrations.
+            Event styling designed to look elevated and feel effortless.
           </h2>
           <p className="mt-4 text-slate-600">
-            Whether you need help with styling only or end-to-end coordination, we offer flexible support that fits your event size, budget, and vision.
+            We focus on the visual setup that transforms your event space — from statement balloons and backdrops to styled décor details that make the celebration feel complete.
           </p>
         </div>
 
@@ -177,15 +181,55 @@ export default function EventManagementWebsite() {
         </div>
       </section>
 
+      <section id="gallery" className="mx-auto max-w-7xl px-6 py-16">
+        <div className="flex items-end justify-between gap-6">
+          <div>
+            <div className="text-sm font-semibold uppercase tracking-[0.18em] text-rose-500">Gallery</div>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
+              A glimpse of the kind of celebration styling we create.
+            </h2>
+            <p className="mt-4 max-w-2xl text-slate-600">
+              Strong visuals build trust faster than long explanations. Showcasing real setups helps clients imagine what their own event can look like.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+            <img
+              src="/images/balloon_garland.jpg"
+              alt="Balloon garland setup"
+              className="h-72 w-full object-cover"
+            />
+          </div>
+
+          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+            <img
+              src="/images/balloon_garland_2.jpg"
+              alt="Celebration styling setup"
+              className="h-72 w-full object-cover"
+            />
+          </div>
+
+          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+            <img
+              src="/images/decor.jpg"
+              alt="Party décor setup"
+              className="h-72 w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
       <section id="packages" className="bg-slate-50 py-16">
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl">
             <div className="text-sm font-semibold uppercase tracking-[0.18em] text-rose-500">Packages</div>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
-              Simple pricing options to help clients get started.
+              Tailored quotes based on your event style and setup scope.
             </h2>
             <p className="mt-4 text-slate-600">
-              These are starter ranges only. Final pricing can vary based on guest count, décor style, venue, and setup complexity.
+              Rather than pushing a rigid off-the-shelf package, we recommend the right level of styling based on your event type, space and visual ambition.
             </p>
           </div>
 
@@ -210,68 +254,25 @@ export default function EventManagementWebsite() {
           <div>
             <div className="text-sm font-semibold uppercase tracking-[0.18em] text-rose-300">About Us</div>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-              A home-based event service with heart, detail, and care.
+              Thoughtful styling for celebrations that deserve to look special.
             </h2>
             <p className="mt-5 max-w-xl leading-8 text-slate-300">
-              Hire a Party was created to help families celebrate special moments without the stress of managing everything themselves. We focus on intimate, stylish events with a personal touch — from planning and décor to setup and coordination — so your celebration feels joyful, polished, and easy.
+              Hire a Party was created for clients who want a beautiful celebration without having to pull every visual detail together themselves. Our focus is on premium presentation, cohesive styling and a smooth setup experience that lets you enjoy the event rather than manage it.
             </p>
           </div>
           <div className="rounded-3xl bg-white/10 p-8 ring-1 ring-white/15 backdrop-blur">
-            <div className="text-lg font-semibold">Why clients choose us</div>
+            <div className="text-lg font-semibold">Why people enquire with us</div>
             <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-200">
-              <li>• Personal service rather than a large-agency experience</li>
-              <li>• Flexible support for both home events and hired venues</li>
-              <li>• Creative themes, practical planning, and calm execution</li>
-              <li>• Suitable for intimate gatherings and medium-size celebrations</li>
+              <li>• They want something more polished than DIY</li>
+              <li>• They want styling that looks premium in photos</li>
+              <li>• They want a smoother process from concept to setup</li>
+              <li>• They want a celebration that feels personal, not generic</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="gallery" className="mx-auto max-w-7xl px-6 py-16">
-        <div className="flex items-end justify-between gap-6">
-          <div>
-            <div className="text-sm font-semibold uppercase tracking-[0.18em] text-rose-500">Gallery</div>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
-              Showcase your past setups and event themes here.
-            </h2>
-            <p className="mt-4 max-w-2xl text-slate-600">
-              
-            </p>
-          </div>
-          <div className="hidden text-sm text-slate-500 md:block">
-           
-          </div>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-  <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <img
-      src="/images/balloon_garland.jpg"
-      alt="Birthday setup"
-      className="h-64 w-full object-cover"
-    />
-  </div>
-
-  <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <img
-      src="/images/balloon_garland_2.jpg"
-      alt="Baby shower setup"
-      className="h-64 w-full object-cover"
-    />
-  </div>
-
-  <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-    <img
-      src="/images/decor.jpg"
-      alt="Party decor setup"
-      className="h-64 w-full object-cover"
-    />
-  </div>
-</div>
-      </section>
-
-      <section id="contact" className="bg-slate-50 py-16">
+      <section id="contact" className="bg-white py-16">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2">
           <div>
             <div className="text-sm font-semibold uppercase tracking-[0.18em] text-rose-500">Contact</div>
@@ -279,7 +280,7 @@ export default function EventManagementWebsite() {
               Ready to plan your event?
             </h2>
             <p className="mt-4 max-w-xl leading-8 text-slate-600">
-              Share your event type, date, location, guest count, and budget range. We’ll come back with a tailored idea and package recommendation.
+              The easiest way to enquire is on WhatsApp. Send your date, event type, location, budget range and any inspiration photos, and we’ll come back with the best-fit styling approach.
             </p>
 
             <div className="mt-8 space-y-4 text-sm text-slate-700">
@@ -290,27 +291,38 @@ export default function EventManagementWebsite() {
             </div>
           </div>
 
-          <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+          <div className="rounded-3xl bg-slate-50 p-8 shadow-sm ring-1 ring-slate-200">
             <div className="space-y-4">
-              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-600">
-                The fastest way to book is to message us on WhatsApp with your event type, date, guest count, and budget range.
+              <div className="rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-600">
+                Best enquiry format: Event type • Preferred date • Location • Guest count • Budget range • Theme or inspiration image
               </div>
 
               <a
-                href="https://wa.me/64212934999"
+                href="https://wa.me/64212934999?text=Hi%20Hire%20a%20Party%2C%20I%E2%80%99d%20like%20to%20enquire%20about%20an%20event."
                 className="block w-full rounded-2xl bg-slate-900 px-6 py-4 text-center text-sm font-medium text-white shadow-lg transition hover:-translate-y-0.5"
               >
                 Enquire on WhatsApp
               </a>
+
+              <div className="rounded-2xl border border-dashed border-slate-300 p-4 text-sm text-slate-500">
+                Fastest response channel: WhatsApp
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <a
+        href="https://wa.me/64212934999?text=Hi%20Hire%20a%20Party%2C%20I%E2%80%99d%20like%20to%20enquire%20about%20an%20event."
+        className="fixed bottom-5 right-5 z-50 rounded-full bg-green-500 px-5 py-3 text-sm font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
+      >
+        WhatsApp Us
+      </a>
+
       <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
           <div>© 2026 Hire a Party. All rights reserved.</div>
-          <div>Styled for small, meaningful celebrations.</div>
+          <div>Styled for beautiful celebrations.</div>
         </div>
       </footer>
     </div>
