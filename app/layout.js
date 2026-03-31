@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export const metadata = {
   title: "Hire a Party",
   description: "Small celebrations, beautifully managed",
