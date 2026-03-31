@@ -245,20 +245,30 @@ export default function EventManagementWebsite() {
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {gallery.map((item) => (
-            <div
-              key={item}
-              className="group overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 shadow-sm"
-            >
-              <div className="flex h-64 items-center justify-center bg-gradient-to-br from-rose-100 via-white to-amber-100 px-6 text-center text-lg font-medium text-slate-500">
-                {item}
-              </div>
-              <div className="border-t border-slate-200 bg-white px-5 py-4 text-sm text-slate-600">
-                Sample showcase area for {item.toLowerCase()}.
-              </div>
-            </div>
-          ))}
-        </div>
+  <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+    <img
+      src="/images/balloon_garland.jpg"
+      alt="Birthday setup"
+      className="h-64 w-full object-cover"
+    />
+  </div>
+
+  <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+    <img
+      src="/images/balloon_garland_2.jpg"
+      alt="Baby shower setup"
+      className="h-64 w-full object-cover"
+    />
+  </div>
+
+  <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+    <img
+      src="/images/decor.jpg"
+      alt="Party decor setup"
+      className="h-64 w-full object-cover"
+    />
+  </div>
+</div>
       </section>
 
       <section id="contact" className="bg-slate-50 py-16">
